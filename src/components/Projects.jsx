@@ -67,14 +67,14 @@ export default function Projects() {
         </motion.div>
 
         {/* Project cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
           {projects.map((project, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.15 + i * 0.12 }}
-              className="glass-card group overflow-hidden flex flex-col"
+              className="glass-card group overflow-hidden flex flex-col h-full"
             >
               {/* Top gradient bar */}
               <div className={`h-1 bg-gradient-to-r ${project.color}`} />

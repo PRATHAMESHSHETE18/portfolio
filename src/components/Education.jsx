@@ -24,13 +24,13 @@ export default function Education() {
           </h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8 items-stretch">
           {/* Degree card */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="glass-card p-7 sm:p-8"
+            className="glass-card p-7 sm:p-8 h-full flex flex-col"
           >
             <div className="flex items-start gap-5">
               <div className="w-14 h-14 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center text-primary-400 flex-shrink-0">
@@ -65,7 +65,7 @@ export default function Education() {
             initial={{ opacity: 0, x: 30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.35 }}
-            className="glass-card p-7 sm:p-8"
+            className="glass-card p-7 sm:p-8 h-full flex flex-col"
           >
             <div className="flex items-start gap-5">
               <div className="w-14 h-14 rounded-xl bg-accent-amber/10 border border-accent-amber/20 flex items-center justify-center text-accent-amber flex-shrink-0">

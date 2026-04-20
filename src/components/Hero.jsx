@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center dot-grid overflow-hidden"
+      className="relative min-h-[100dvh] flex flex-col justify-center pt-28 pb-20 dot-grid overflow-hidden"
     >
       {/* Animated orbs */}
       <div className="orb w-[500px] h-[500px] bg-primary-600 top-[-10%] left-[-10%]" />
@@ -19,7 +19,7 @@ export default function Hero() {
         style={{ animationDelay: "-14s" }}
       />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
         {/* Tag */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -90,7 +90,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex flex-wrap justify-center gap-4"
+          className="flex flex-wrap justify-center gap-4 mb-16"
         >
           <a
             href="#projects"
@@ -112,7 +112,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-dark-500 hover:text-primary-400 transition-colors"
+          className="text-dark-500 hover:text-primary-400 transition-colors mt-auto"
         >
           <motion.div
             animate={{ y: [0, 8, 0] }}
